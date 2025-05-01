@@ -1,4 +1,4 @@
-# lon3ly-afk.github.io
+markdown# lon3ly-afk.github.io
 
 Добро пожаловать на мой сайт!
 *О проекте*
@@ -18,6 +18,9 @@ bash
 git clone https://github.com/lon3ly-afk/lon3ly-afk.github.io.git
 
 или просто перейти по [вашей ссылке](https://lon3ly-afk.github.io/)
+*Купить деф за 1$*
+
+Если хотите поддержать проект — купить деф за 1$. Связь и оплату можно осуществить через [ваши контакты или платформу](#).
 *Контакт*
 
 Если у вас есть вопросы или предложения, свяжитесь со мной:
@@ -26,4 +29,4 @@ git clone https://github.com/lon3ly-afk/lon3ly-afk.github.io.git
 - GitHub: [lon3ly-afk](https://github.com/lon3ly-afk)
 *Благодарности*
 
-Спасибо за посещение моего сайта!
+Спасибо за посещение моего сайта!  
