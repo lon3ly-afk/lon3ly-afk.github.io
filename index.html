@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт на GitHub Pages</title>
+    <title>BIO</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -41,11 +41,11 @@
 </head>
 <body>
     <header>
-        <h1>САЙТ ЕЩЕ НА ТЕСТЕ!</h1>
+        <h1>My name Артем</h1>
     </header>
     <main>
-        <p>СКОРО БУДЕТ ДОСТУПНО</p>
-        <p>СКОРО БУДЕТ ДОСТУПНО</p>
+        <p></p>
+        <p>/p>
     </main>
     <footer>
         &copy; lonely 
@@ -117,56 +117,49 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Фон с текстом</title>
+<title>Фон с переливающимся текстом</title>
 <style>
   body {
     margin: 0;
-    padding: 0;
-    /* Указываем изображение как фон */
+    height: 100vh;
+    /* Фон с изображением */
     background-image: url('https://cdn4.cdn-telegram.org/file/iB4g_5eY6-a2WI9s1YGwSUy3JlU1R_pb7OceURQr-0ITZnQIzKrc4VpVKTJGdEgClwmIzWaJ-2whMae15zEG3MCftLvupABU6uzJ2fJf-a266CXdz_S8hTkEIkdxwdaaxv5bCopzc42oNNi9l9SveBsXzO3hJ6vrOjRBkcGoIFDursorPBDceS8oQLii2SYL0dkoAwJVb1TUH0iBXmvmPJhAzKyF7PeH_WgnoEfDm487Z3NWINhsXA-uGeqUvH0PPdN7taWCZ0BqA9_TuIQ8DE6_LPkI6fIkubQfdSGeMfEmkPBS6JfLjxE5rYm87u4wAx2Ony9eNz7GzjXbRuIsSA.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh; /* чтобы занять всю высоту */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     font-family: Arial, sans-serif;
   }
 
-  /* Стиль для текста "автор lonely" */
+  /* Окно для текста */
   .text-container {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    display: flex;
-    font-size: 36px;
+    font-size: 60px;
     font-weight: bold;
+    background: linear-gradient(270deg, red, blue, yellow, black);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 10s linear infinite;
+    text-align: center;
   }
 
-  .text-part {
-    margin-right: 10px;
-  }
-
-  .red {
-    color: red;
-  }
-
-  .blue {
-    color: blue;
-  }
-
-  .yellow {
-    color: yellow;
-  }
-
-  .black {
-    color: black;
+  /* Анимация градиента для перелива */
+  @keyframes rainbow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 </style>
 </head>
 <body>
-  <div class="text-container">
-    <span class="text-part red">автор</span>
-    <span class="text-part blue">lonely</span>
-  </div>
+  <div class="text-container">автор lonely</div>
 </body>
 </html>
-
