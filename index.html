@@ -121,3 +121,68 @@
 <h1>автор lonely</h1>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Кнопка "bio"</title>
+<style>
+  /* Контейнер для кнопки, чтобы разместить её в правом верхнему углу */
+  .top-right {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+  }
+
+  /* Стиль самой кнопки */
+  .bio-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #fff; /* Или можете сделать прозрачную или другую */
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    /* Убираем стандартный стиль кнопки */
+    appearance: none;
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  /* Анимация градиентного цвета текста */
+  @keyframes rainbow-text {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  /* Стиль текста с анимацией градиента */
+  .gradient-text {
+    background: linear-gradient(270deg, rgb(0,0,0), rgb(0,255,0), rgb(128,0,128), rgb(0, 128, 128));
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow-text 5s ease infinite;
+  }
+</style>
+</head>
+<body>
+
+<!-- Контейнер для кнопки -->
+<div class="top-right">
+  <a href="https://t.me/l0nelybio" target="_blank" class="bio-button">
+    <span class="gradient-text">bio</span>
+  </a>
+</div>
+
+</body>
+</html>
