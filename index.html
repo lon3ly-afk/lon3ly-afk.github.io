@@ -113,3 +113,41 @@
   <!-- Ваш контент здесь -->
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>Фон с изображением</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background-image: url('https://cdn4.cdn-telegram.org/file/iB4g_5eY6-a2WI9s1YGwSUy3JlU1R_pb7OceURQr-0ITZnQIzKrc4VpVKTJGdEgClwmIzWaJ-2whMae15zEG3MCftLvupABU6uzJ2fJf-a266CXdz_S8hTkEIkdxwdaaxv5bCopzc42oNNi9l9SveBsXzO3hJ6vrOjRBkcGoIFDursorPBDceS8oQLii2SYL0dkoAwJVb1TUH0iBXmvmPJhAzKyF7PeH_WgnoEfDm487Z3NWINhsXA-uGeqUvH0PPdN7taWCZ0BqA9_TuIQ8DE6_LPkI6fIkubQfdSGeMfEmkPBS6JfLjxE5rYm87u4wAx2Ony9eNz7GzjXbRuIsSA.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Обеспечивает чтобы всё было адаптивным */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Стиль для кнопок, чтобы они не сжимались */
+  button {
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.8);
+    cursor: pointer;
+    /* Не растягиваются, сохраняют размер */
+    flex-shrink: 0;
+  }
+</style>
+</head>
+<body>
+  <!-- Пример кнопки -->
+  <button>Нажми меня</button>
+</body>
+</html>
+
