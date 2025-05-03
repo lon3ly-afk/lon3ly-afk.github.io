@@ -75,3 +75,49 @@
   </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Фон с переливающимся текстом</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background-image: url('https://cdn4.cdn-telegram.org/file/iB4g_5eY6-a2WI9s1YGwSUy3JlU1R_pb7OceURQr-0ITZnQIzKrc4VpVKTJGdEgClwmIzWaJ-2whMae15zEG3MCftLvupABU6uzJ2fJf-a266CXdz_S8hTkEIkdxwdaaxv5bCopzc42oNNi9l9SveBsXzO3hJ6vrOjRBkcGoIFDursorPBDceS8oQLii2SYL0dkoAwJVb1TUH0iBXmvmPJhAzKyF7PeH_WgnoEfDm487Z3NWINhsXA-uGeqUvH0PPdN7taWCZ0BqA9_TuIQ8DE6_LPkI6fIkubQfdSGeMfEmkPBS6JfLjxE5rYm87u4wAx2Ony9eNz7GzjXbRuIsSA.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 3em;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    background: linear-gradient(90deg, red, blue, yellow, black);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 5s linear infinite;
+    text-align: center;
+  }
+
+  @keyframes rainbow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+</style>
+</head>
+<body>
+<h1>автор lonely</h1>
+</body>
+</html>
