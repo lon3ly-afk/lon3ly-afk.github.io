@@ -1,41 +1,46 @@
-<!-- Вставьте этот код внутрь вашего HTML документа -->
-
-<!-- Стиль для кнопки -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Кнопка Bio</title>
 <style>
-  /* Расположение кнопки в правом верхнем углу */
-  .bio-button {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 10px 20px;
-    /* Чтобы убрать стандартные стили кнопки */
-    outline: none;
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f0f0f0; /* или любой другой фон */
   }
 
-  /* Переливающийся цвет текста */
-  .rainbow-text {
-    font-weight: bold;
-    font-size: 16px;
-    background: linear-gradient(
+  .bio-button {
+    padding: 15px 30px;
+    background-color: transparent;
+    border: 2px solid black; /* можно убрать или изменить */
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    /* Анимация градиента для текста */
+    background-image: linear-gradient(
       270deg,
-      rgb(0, 0, 0),
+      rgb(255, 0, 0),   /* красный, можно почитать как "черный" по сути темнее, но лучше задать точные RGB */
       rgb(0, 255, 0),
       rgb(128, 0, 128),
       rgb(0, 255, 255),
-      rgb(0, 0, 0)
+      rgb(255, 0, 0)    /* повтор для анимации */
     );
     background-size: 600% 600%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: rainbow 10s linear infinite;
+    animation: rainbowText 5s linear infinite;
+    transition: background-image 0.3s ease;
   }
 
-  /* Анимация градиента */
-  @keyframes rainbow {
+  @keyframes rainbowText {
     0% {
       background-position: 0% 50%;
     }
@@ -47,13 +52,16 @@
     }
   }
 
-  /* Убираем стандартное оформление при Hover */
-  .bio-button:hover {
-    opacity: 0.8;
+  /* убираем стандартные стили для ссылки */
+  a {
+    text-decoration: none;
   }
-</style>
 
-<!-- Кнопка -->
-<a href="https://t.me/l0nelybio" target="_blank" class="bio-button">
-  <span class="rainbow-text">bio</span>
-</a>
+</style>
+</head>
+<body>
+
+<a href="https://t.me/l0nelybio" target="_blank" class="bio-button">bio</a>
+
+</body>
+</html>
