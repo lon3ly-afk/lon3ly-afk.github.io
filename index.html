@@ -65,17 +65,59 @@
 
 </body>
 </html>
-<script src="three.r134.min.js"></script>
-<script src="vanta.birds.min.js"></script>
-<сценарий>
-ВАНТА. ПТИЦЫ({
- el: "#your-элемент-селектор",
- mouseControls: true,
- touchControls: true,
- gyroControls: false,
- минВысота: 200.00,
- minWidth: 200.00,
- масштаб: 1.00,
- scaleМобильный: 1.00
-})
-</скрипт>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Фон с видео</title>
+<style>
+  /* Сделать тело и html занимать всю высоту и убрать отступы */
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  /* Видео занимает весь экран, остается позади */
+  #background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+  }
+
+  /* Пример контента поверх видео */
+  .content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    padding: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+</style>
+</head>
+<body>
+  <!-- Видео в качестве фона -->
+  <video id="background-video" autoplay muted loop playsinline>
+    <source src="https://static.vecteezy.com/system/resources/previews/021/047/417/mp4/animated-abstract-background-floating-bokeh-lights-bokeh-particles-background-abstract-bokeh-background-animation-defocused-background-floating-bokeh-lights-free-video.mp4" type="video/mp4" />
+    Ваш браузер не поддерживает видео тег.
+  </video>
+
+  <!-- Контент, расположенный поверх видео -->
+  <div class="content">
+    <h1>Добро пожаловать!</h1>
+    <p>Это пример страницы с фоном из видео.</p>
+  </div>
+</body>
+</html>
