@@ -65,57 +65,17 @@
 
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Видео на фоне</title>
-<style>
-  /* Сделать видео фоном, покрывающим всю страницу */
-  body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
-  }
-
-  video.background-video {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
-    transform: translate(-50%, -50%);
-    object-fit: cover; /* Обеспечить покрытие без искажения */
-  }
-
-  /* Контейнер для другого контента сверху фона */
-  .content {
-    position: relative;
-    z-index: 1;
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
-</style>
-</head>
-<body>
-
-<!-- Видеофон с автозапуском, без звука, зацикленным -->
-<video class="background-video" autoplay muted loop playsinline>
-  <source src="https://videocdn.cdnpk.net/videos/7e844280-51a3-40f7-b82a-ae71174fa9e6/horizontal/previews/clear/large.mp4?token=exp=1746297751~hmac=0c4cf2a0d6ba66af92112189388db725db1d85d625157d7bff9ed99cfae9eeee" type="video/mp4" />
-  Ваш браузер не поддерживает видео.
-</video>
-
-<!-- Ваш контент сверху -->
-<div class="content">
-  <h1></h1>
-  <p>подпишись</p>
-</div>
-
-</body>
-</html>
+<script src="three.r134.min.js"></script>
+<script src="vanta.birds.min.js"></script>
+<сценарий>
+ВАНТА. ПТИЦЫ({
+ el: "#your-элемент-селектор",
+ mouseControls: true,
+ touchControls: true,
+ gyroControls: false,
+ минВысота: 200.00,
+ minWidth: 200.00,
+ масштаб: 1.00,
+ scaleМобильный: 1.00
+})
+</скрипт>
